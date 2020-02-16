@@ -71,8 +71,8 @@ def arg_parse():
 
 
 if __name__ == '__main__':
-    cfgfile = "cfg/yolov3.cfg"
-    weightsfile = "yolov3.weights"
+    cfgfile = "cfg/yolov3-tiny.cfg"
+    weightsfile = "G:/OneDrive - xKx/• Weight and Biases/yolov3-tiny.weights"
     num_classes = 80
 
     args = arg_parse()
@@ -116,7 +116,7 @@ if __name__ == '__main__':
             
             img, orig_im, dim = prep_image(frame, inp_dim)
             
-#            im_dim = torch.FloatTensor(dim).repeat(1,2)                        
+            im_dim = torch.FloatTensor(dim).repeat(1,2)                        
             
             
             if CUDA:
