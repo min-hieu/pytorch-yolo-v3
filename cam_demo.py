@@ -71,7 +71,7 @@ def arg_parse():
 
 
 if __name__ == '__main__':
-    cfgfile = "cfg/yolov3-tiny.cfg"
+    cfgfile = "cfg/yolov3-spp.cfg"
     weightsfile = "G:/OneDrive - xKx/• Weight and Biases/yolov3-tiny.weights"
     num_classes = 80
 

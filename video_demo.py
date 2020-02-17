@@ -59,7 +59,8 @@ def arg_parse():
     Parse arguements to the detect module
     
     """
-    
+    cfgfile = "cfg/yolov3-tiny.cfg"
+    weightsfile = "G:/OneDrive - xKx/• Weight and Biases/yolov3-tiny.weights"
     
     parser = argparse.ArgumentParser(description='YOLO v3 Video Detection Module')
    
@@ -71,10 +72,10 @@ def arg_parse():
     parser.add_argument("--nms_thresh", dest = "nms_thresh", help = "NMS Threshhold", default = 0.4)
     parser.add_argument("--cfg", dest = 'cfgfile', help = 
                         "Config file",
-                        default = "cfg/yolov3.cfg", type = str)
+                        default = cfgfile, type = str)
     parser.add_argument("--weights", dest = 'weightsfile', help = 
                         "weightsfile",
-                        default = "yolov3.weights", type = str)
+                        default = weightsfile, type = str)
     parser.add_argument("--reso", dest = 'reso', help = 
                         "Input resolution of the network. Increase to increase accuracy. Decrease to increase speed",
                         default = "416", type = str)
